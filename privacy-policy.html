@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Self Tracker — Privacy Policy</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Mono:wght@700&display=swap');
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: 'DM Sans', sans-serif;
+      background: #08080d;
+      color: #c8c8d8;
+      line-height: 1.75;
+      padding: 0;
+    }
+
+    .header {
+      background: #0c0c14;
+      border-bottom: 1px solid #2a2a3d;
+      padding: 32px 0;
+      text-align: center;
+    }
+
+    .header h1 {
+      font-family: 'Space Mono', monospace;
+      font-size: 24px;
+      color: #22d3ee;
+      letter-spacing: -0.5px;
+    }
+
+    .header h1 span { color: #7c7c98; font-weight: 400; }
+
+    .header p {
+      margin-top: 8px;
+      color: #7c7c98;
+      font-size: 14px;
+    }
+
+    .container {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 48px 24px 80px;
+    }
+
+    h2 {
+      font-size: 20px;
+      color: #e8e8f0;
+      margin-top: 40px;
+      margin-bottom: 12px;
+      padding-bottom: 8px;
+      border-bottom: 1px solid #1e1e2e;
+    }
+
+    p {
+      margin-bottom: 16px;
+      font-size: 15px;
+    }
+
+    strong {
+      color: #e8e8f0;
+    }
+
+    ul {
+      margin: 8px 0 16px 24px;
+    }
+
+    li {
+      margin-bottom: 6px;
+      font-size: 15px;
+    }
+
+    a {
+      color: #22d3ee;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .last-updated {
+      margin-top: 48px;
+      padding-top: 24px;
+      border-top: 1px solid #1e1e2e;
+      font-size: 13px;
+      color: #55556b;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="header">
+    <h1>SELF<span>TRACKER</span></h1>
+    <p>Privacy Policy</p>
+  </div>
+
+  <div class="container">
+
+    <h2>Overview</h2>
+    <p>Self Tracker is a Chrome browser extension that helps users understand their browsing habits by tracking time spent on websites and categorizing activity into Work, Personal, and Entertainment. We are deeply committed to protecting your privacy.</p>
+    <p><strong>The short version: We collect nothing. All your data stays on your device. There is no server, no account, and no tracking by us whatsoever.</strong></p>
+
+    <h2>What Data Is Collected</h2>
+    <p>Self Tracker collects the following data locally on your device:</p>
+    <ul>
+      <li><strong>Website URLs and domain names</strong> — to identify which sites you visit.</li>
+      <li><strong>Page titles</strong> — to display readable site names in your dashboard.</li>
+      <li><strong>Time spent on each site</strong> — measured by tracking active tab duration.</li>
+      <li><strong>Visit timestamps</strong> — to organize your activity by day and hour.</li>
+      <li><strong>Category assignments</strong> — whether a site is classified as Work, Personal, or Entertainment.</li>
+      <li><strong>User category overrides</strong> — when you manually reclassify a site.</li>
+    </ul>
+
+    <h2>Where Data Is Stored</h2>
+    <p>All data is stored <strong>exclusively in your browser's local storage</strong> using the Chrome Storage API (<code>chrome.storage.local</code>). This means:</p>
+    <ul>
+      <li>Your data never leaves your device.</li>
+      <li>Your data is not transmitted to any server, cloud service, or third party.</li>
+      <li>Your data is not accessible to the extension developer or anyone else.</li>
+      <li>Your data is tied to your local Chrome profile and is not synced across devices.</li>
+    </ul>
+
+    <h2>Data Sharing</h2>
+    <p><strong>We do not share, sell, transfer, or disclose any user data to any third party.</strong> There is no analytics service, no telemetry, no crash reporting, and no external API calls that transmit user data.</p>
+
+    <h2>Data Retention</h2>
+    <p>Browsing data is retained locally for up to <strong>90 days</strong>. Data older than 90 days is automatically deleted by the extension. You can also manually delete all data at any time from the extension's dashboard using the "Clear All Data" button.</p>
+
+    <h2>Third-Party Services</h2>
+    <p>The extension loads the <strong>Chart.js</strong> library from <code>cdn.jsdelivr.net</code> to render visual charts in the dashboard. This is a widely used, open-source JavaScript library. No user data is sent to this CDN — it is used solely to load the charting code. The extension also loads Google Favicons (<code>google.com/s2/favicons</code>) to display website icons. No browsing data is transmitted in these requests beyond the domain name for the favicon image.</p>
+
+    <h2>Permissions Used</h2>
+    <ul>
+      <li><strong>tabs</strong> — To detect the active website and page title for time tracking.</li>
+      <li><strong>activeTab</strong> — To read the current tab information when the user opens the popup.</li>
+      <li><strong>storage</strong> — To save tracking data locally on the device.</li>
+      <li><strong>alarms</strong> — To periodically save active tab data every 30 seconds.</li>
+      <li><strong>host permissions (all URLs)</strong> — To read URLs from all websites for categorization purposes.</li>
+    </ul>
+
+    <h2>User Control</h2>
+    <p>You have full control over your data at all times:</p>
+    <ul>
+      <li>You can <strong>view all tracked data</strong> in the extension dashboard.</li>
+      <li>You can <strong>change the category</strong> of any website if the auto-detection was incorrect.</li>
+      <li>You can <strong>export your data</strong> as a CSV file at any time.</li>
+      <li>You can <strong>delete all data</strong> instantly from the dashboard.</li>
+      <li>You can <strong>uninstall the extension</strong> at any time, which removes all stored data.</li>
+    </ul>
+
+    <h2>Children's Privacy</h2>
+    <p>Self Tracker is not directed at children under the age of 13. We do not knowingly collect any personal information from children.</p>
+
+    <h2>Changes to This Policy</h2>
+    <p>If this privacy policy is updated, the changes will be reflected on this page with an updated date below. Since the extension does not collect any contact information, users are encouraged to review this page periodically.</p>
+
+    <h2>Contact</h2>
+    <p>If you have any questions or concerns about this privacy policy or the Self Tracker extension, please open an issue on our GitHub repository or contact us at the email listed on the Chrome Web Store listing.</p>
+
+    <div class="last-updated">Last updated: February 19, 2026</div>
+
+  </div>
+
+</body>
+</html>
